@@ -1,16 +1,32 @@
+ <div id="header">
+    <h1>Quotes Engine APP</h1>
+    
+</div>
+<div id="about" >
+    <h2 >!!!Welcome!!!</h2>
+    <p><em>Quote Engine App</em>is an application developed in testing angular concept,the application allows the user to,Create a new quoteUpvote or downvote a quote and view vote number on quote,Delete a quote & shows date when quote was generated.</p>
+</div>
+<!-------------->
 <div id="content" class="d-flex justify-content-center">
+
+    <div class="jumbotron">
+        <app-quote-form></app-quote-form>
+    </div>
     <div class="quotelist">
-        <h1>Quotes of the day</h1>
+        <h3>Quotes of the day</h3>
         <hr>
         <ol >
             <li *ngFor='let quote of quotes'>
                 <i>Author - {{quote.author}}</i><br><br>
-                "{{quote.name}}"
+                "{{quote.name}}"<br>
                 <app-likes></app-likes>
             </li>
         </ol>
     </div>
-    <div class="jumbotron">
-        <app-quote-form></app-quote-form>
-    </div>
 </div>  
+<div id="header">
+    <h5>CONTACTS</h5>
+    <h6>Email:msyokimutua@gmail.com</h6>
+    <p>Quotes Engine APP</p>
+    <p>Copyright © 2020 Angular Test-Musyoki Mutua  </p>
+</div>

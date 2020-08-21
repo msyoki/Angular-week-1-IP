@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote'
 
+
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -13,7 +14,6 @@ export class QuoteComponent implements OnInit {
     new Quote(3,'Do one thing every day that scares you',' Eleanor Roosevelt',new Date(2020,3,14)),
 
   ];
-
   constructor() { }
   
 
