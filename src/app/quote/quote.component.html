@@ -1,14 +1,16 @@
-<div>
-    <h1>Quotes of the day</h1>
-    <hr>
-    <ol >
-      <li style="padding: 15px;" *ngFor='let quote of quotes'>
-        <i>Author - {{quote.author}}</i><br><br>
-        "{{quote.name}}"
-        <app-likes></app-likes>
-      </li>
-    </ol>
-    <div>
+<div id="content" class="d-flex justify-content-center">
+    <div class="quotelist">
+        <h1>Quotes of the day</h1>
+        <hr>
+        <ol >
+            <li *ngFor='let quote of quotes'>
+                <i>Author - {{quote.author}}</i><br><br>
+                "{{quote.name}}"
+                <app-likes></app-likes>
+            </li>
+        </ol>
+    </div>
+    <div class="jumbotron">
         <app-quote-form></app-quote-form>
     </div>
-</div>
+</div>  
