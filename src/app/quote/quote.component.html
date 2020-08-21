@@ -3,8 +3,8 @@
     <hr>
     <ol >
       <li style="padding: 15px;" *ngFor='let quote of quotes'>
-        {{quote.name}}
-        <i>{{quote.author}}</i><br><br>
+        <i>Author - {{quote.author}}</i><br><br>
+        "{{quote.name}}"
         <app-likes></app-likes>
       </li>
     </ol>
