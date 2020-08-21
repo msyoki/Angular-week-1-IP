@@ -1,0 +1,11 @@
+<div>
+    <h1>Quotes of the day</h1>
+    <hr>
+    <ol >
+      <li style="padding: 15px;" *ngFor='let quote of quotes'>
+        {{quote.name}}
+        <i>{{quote.author}}</i><br><br>
+        <app-likes></app-likes>
+      </li>
+    </ol>
+</div>
