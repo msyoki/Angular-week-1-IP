@@ -8,9 +8,9 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
-    {name:'You’ve gotta dance like there’s nobody watching, love like you’ll never be hurt, sing like there’s nobody listening, and live like it’s heaven on earth.',author:'William W. Purkey'},
-    {name:'Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.',author:' Neil Gaiman'},
-    {name:'Do one thing every day that scares you',author:' Eleanor Roosevelt'},
+    new Quote(1,'You’ve gotta dance like there’s nobody watching, love like you’ll never be hurt, sing like there’s nobody listening, and live like it’s heaven on earth.','William W. Purkey',new Date(2020,3,14)),
+    new Quote(2,'Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.',' Neil Gaiman',new Date(2020,3,14)),
+    new Quote(3,'Do one thing every day that scares you',' Eleanor Roosevelt',new Date(2020,3,14)),
 
   ];
 
