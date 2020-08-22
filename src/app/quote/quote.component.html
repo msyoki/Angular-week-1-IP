@@ -1,32 +1,46 @@
  <div id="header">
-    <h4>Quotes Engine APP</h4>
+    <h2 style="font-weight: bolder;">Quote Engine APP</h2> 
+    
     
 </div>
-<div id="about" >
-    <h2 >Welcome</h2>
-    <p><strong>"Quote Engine App</strong> is an application developed in testing angular concept,the application allows the user to,create a new quote,upvote or downvote the quote, view vote count on each quote,delete a quote & shows date when quote was generated."</p>
-</div>
+<nav class=" about ">
+    <h5>ABOUT</h5>
+    <p>Quote Engine App is an application developed in testing angular concept,the application allows the user to,create a new quote,upvote or downvote the quote, view vote count on each quote,delete a quote & shows date when quote was generated.</p>
+    <!-- Navbar content -->
+</nav>
 <!-------------->
 <div id="content" class="d-flex justify-content-center">
-
-    <div class="jumbotron">
+    <div id= "form" class="d-flex justify-content-center">
         <app-quote-form></app-quote-form>
+        
     </div>
     <div class="quotelist">
-        <h3>Quotes of the day</h3>
+        <h5>Welcome</h5>
+        <h5>Quotes of the day</h5>
         <hr>
-        <ol >
-            <li *ngFor='let quote of quotes'>
-                <i><span>Author - {{quote.author}}</span></i><br><br>
-                "{{quote.name}}"<br>
-                <app-likes></app-likes>
-            </li>
-        </ol>
+        <div >
+            <table *ngFor='let quote of quotes'>
+                <tr >
+                    <th>
+                        <i>{{quote.author}}</i>  
+                    </th>
+                </tr>
+                <tr>
+                    <td>"{{quote.name}}"</td>
+                </tr>
+                <tr>
+                    <td><app-likes></app-likes></td>
+                </tr><br><br>
+            </table>
+        </div>
     </div>
 </div>  
-<div id="header">
-    <h5>CONTACTS</h5>
+
+<div id="footer">
+    <h6>CONTACTS</h6>
     <h6>Email:msyokimutua@gmail.com</h6>
-    <p>Quotes Engine APP</p>
-    <p>Copyright © 2020 Angular Test-Musyoki Mutua  </p>
+    <h6>Facebook</h6>
+    <h6>Twitter</h6><br>
+    <h6>Quote Engine APP</h6>
+    <h6>Copyright © 2020 Angular Test-Musyoki Mutua  </h6>
 </div>
