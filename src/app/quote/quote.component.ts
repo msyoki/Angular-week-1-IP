@@ -15,7 +15,11 @@ export class QuoteComponent implements OnInit {
     new Quote(3,"Musyoki Mutua",' Eleanor Roosevelt','Do one thing every day that scares you',new Date(2020,3,14)),
 
   ];
-  
+  completeQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
   constructor() { }
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
