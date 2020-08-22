@@ -21,12 +21,13 @@
         <div >
             <table *ngFor='let quote of quotes'>
                 <tr >
-                    <th>
-                        <i>{{quote.author}}</i>  
-                    </th>
+                    <th>{{quote.author}}</th>
                 </tr>
                 <tr>
                     <td>"{{quote.name}}"</td>
+                </tr>
+                <tr>
+                    <td><i>Posted on {{quote.completeDate|date|uppercase}}</i></td>
                 </tr>
                 <tr>
                     <td><app-likes></app-likes></td>
