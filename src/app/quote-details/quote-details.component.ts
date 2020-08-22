@@ -7,7 +7,7 @@ import { Quote } from '../quote'
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-  @Output() quote: Quote;
+  @Output() quotes: Quote;
   constructor() { }
 
   ngOnInit(): void {
