@@ -12,28 +12,32 @@
         <app-quote-form></app-quote-form>
         
     </div>
-    <div class="quotelist">
+    <div class="quotelist ">
         <h5>Welcome !!!</h5>
         <h5>Quotes of the day</h5>
         <hr>
         <div >
             <table *ngFor='let quote of quotes'>
-
                 <tr>
                     <th><span>Author: "{{quote.authorName}}"</span></th>
                 </tr>
+
                 <tr>
                     <td>"{{quote.description}}"</td>
                 </tr>
-                <tr>
-                    <td><i>Editor : {{quote.editorName}}</i></td>
-                </tr>
+
                 <tr>
                     <td><i>Posted on {{quote.postDate|date|uppercase}}</i></td>
                 </tr>
+
                 <tr>
                     <td><app-likes></app-likes></td>
+                </tr><br>
+                
+                <tr>
+                    <td><app-quote-details (isComplete) = 'completeQuote($event,i)'></app-quote-details></td>
                 </tr><br><br>
+                
             </table>
         </div>
     </div>
