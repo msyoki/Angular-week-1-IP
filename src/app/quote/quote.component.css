@@ -42,11 +42,11 @@
 }
 .quotelist{
     float: right;
-    width: 70%;
+    width: 60%;
     margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
-
 
 .quotelist h5{
     font-weight: bold;
@@ -62,4 +62,9 @@ i{
     color: #F6D55C; 
     font-size: small;
     font-weight: bold;
+ }
+ span{
+    font-weight: bolder;
+    color:#F6D55C ;
+
  }
