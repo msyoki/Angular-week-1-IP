@@ -1,27 +1,40 @@
 
+#header h2{
+    font-weight: bolder;
+}
+
+
+
 #header, #footer{
     background-color: #F6D55C;
-    color:  #173F5F;
+    color:  #292929;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 
 }
-#about{
-    background-color: #3CAEA3;
-    color: #173F5F;
+.about{
+    background-color:#585858;
+    color: #F6D55C;
     padding: 20px;
+    text-align: center;
+
+
 }
 
-#about h2{
+
+.about h5{
     font-weight: bold;
 
 }
-#about h2, p{
+.about h5, p{
     text-align: center;
 }
+.about p{
+    color: white;
+}
 #content{
-    background-color: #173F5F;
+    background-color: #292929;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
@@ -29,14 +42,22 @@
 }
 .quotelist{
     float: right;
-    width: 60%;
-    margin-left: 30px;
+    width: 70%;
+    margin-left: 50px;
+
 }
 
-.quotelist h3{
+
+.quotelist h5{
     font-weight: bold;
     background-color: #F6D55C;
-    color: #173F5F;
+    color: #292929;
     padding: 20px;
     border-radius: 25px;
+    display: flex;
+
 }
+
+i{
+    color: #F6D55C; 
+ }

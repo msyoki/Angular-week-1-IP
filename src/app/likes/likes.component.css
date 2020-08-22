@@ -1,7 +1,6 @@
-#btn1{
+#btn1, #btn2{
     margin-right: 10px;
     margin-left: 10px;
-}
-#btn2{
-    margin-left: 10px;
+    background-color: white;
+    color: black;
 }

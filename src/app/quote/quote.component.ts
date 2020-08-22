@@ -14,10 +14,10 @@ export class QuoteComponent implements OnInit {
     new Quote(3,'Do one thing every day that scares you',' Eleanor Roosevelt',new Date(2020,3,14)),
 
   ];
-  constructor() { }
   
+  constructor() { }
 
   ngOnInit(): void {
   }
-
+  
 }
