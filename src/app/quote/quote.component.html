@@ -8,10 +8,9 @@
 </nav>
 <!-------------->
 <div id="content" class="d-flex justify-content-center">
-    <div id= "form" class="d-flex justify-content-center">
-        <app-quote-form></app-quote-form>
-        
-    </div>
+    <div class=" d-flex justify-content-center" >
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+   </div>
     <div class="quotelist ">
         <h5>Welcome !!!</h5>
         <h5>Quotes of the day</h5>
