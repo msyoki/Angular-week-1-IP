@@ -7,10 +7,11 @@
     <!-- Navbar content -->
 </nav>
 <!-------------->
+<div>
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
 <div id="content" class="d-flex justify-content-center">
-    <div>
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-    </div>
+
     <div class="quotelist ">
         <h5>Welcome !!!</h5>
         <h5>Quotes of the day</h5>
