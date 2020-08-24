@@ -1,17 +1,17 @@
  <div id="header">
     <h2 >Quote Engine APP ®</h2>  
 </div>
-<nav class=" about ">
+<div class=" about ">
     <h5>ABOUT</h5>
     <p>Quote Engine App is an application developed by Musyoki Mutua in testing first week of learning angular concept,the application allows the user to;create a new quote,upvote or downvote the quote, view vote count on each quote,delete a quote & shows date when quote was generated.</p>
     <!-- Navbar content -->
-</nav>
-<!-------------->
-<div>
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>
-<div id="content" class="d-flex justify-content-center">
+<!-------------->
 
+<div id="content" class="d-flex justify-content-center">
+    <div>
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
     <div class="quotelist ">
         <h5>Welcome !!!</h5>
         <h5>Quotes of the day</h5>
