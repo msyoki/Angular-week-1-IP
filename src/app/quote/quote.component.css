@@ -59,8 +59,7 @@
 #quote{
     border: 5px solid white;
     padding: 40px;
-    margin: 0em;
-    width: 70%;
+    width: 90%;
     float: right;
     text-align: center;
     background-image: url(../../assets/images/quotes-bg.jpg);
@@ -74,9 +73,9 @@
 
 #form{
     float: left;
-    width: 60%;
+    width: 50%;
     opacity: 0.8;
-    margin: 50px;  
+    margin: 80px;  
 }
 
 i{
