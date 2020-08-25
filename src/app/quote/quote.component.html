@@ -2,32 +2,29 @@
     <h2 >InspireDock APP ®</h2>  
 </div>
 <div class=" about ">
-    <h5>ABOUT</h5>
+    <h4>ABOUT</h4>
     <p>This is an application developed by Musyoki Mutua in testing first week of learning angular concept,the application allows the user to;create a new inspiration quotes,upvote or downvote the quote, view vote count on each quote,delete a quote & shows date when quote was generated.</p>
 </div>
 <!-------------->
 
 <div id="content" class="d-flex justify-content-center">
-    <div>
+    <div id="form">
         <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+
     </div>
-    <div class="quotelist ">
-        <h5>Welcome !!!</h5>
-        <h5>Quotes of the day</h5>
+    
+    <div *ngFor='let quote of quotes' id="quote">
+        
         <hr>
-        <div class="container"id="table">
-            <div *ngFor='let quote of quotes' id="quote">
-                <h4><span>Author: "{{quote.authorName}}"</span></h4>
-                <h4><i>Editor: "{{quote.editorName}}"</i></h4>
-                <p>"{{quote.description}}"</p>
-                <h6><i>Posted on {{quote.postDate|date|uppercase}}</i></h6>
-                <h6><i>{{quote.postDate|dateCount}} Days old</i></h6>
-                <app-likes></app-likes><br><br>
-                <app-quote-details (isComplete) = 'completeQuote($event,i)'></app-quote-details><br><br><br>
-            </div>
-        </div>
+        <h4><span>Author<br>"{{quote.authorName}}"</span></h4>
+        <h4><i>Editor: "{{quote.editorName}}"</i></h4>
+        <p>"{{quote.description}}"</p>
+        <h6><i>Posted on {{quote.postDate|date|uppercase}}</i></h6>
+        <h6><i>{{quote.postDate|dateCount}} Days old</i></h6>
+        <app-likes></app-likes><br><br>
+        <app-quote-details (isComplete) = 'completeQuote($event,i)'></app-quote-details>
     </div>
-</div>  
+</div>
 
 <div id="footer">
     <h6>CONTACTS</h6>
