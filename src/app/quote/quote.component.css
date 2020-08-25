@@ -12,64 +12,81 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 
+
 }
 .about{
     background-color:#585858;
-    color: #F6D55C;
+    color: #292929;
     padding: 20px;
     text-align: center;
 
 
 }
-
-
-.about h5{
+.about {
+    color:#F6D55C;
     font-weight: bolder;
 
 }
-.about h5, p{
+.about h4{
+    font-weight: bolder;
+    color: #292929;
+    padding: 20px;
+    width: auto;
+    font-weight: bolder;
+    border-radius: 25px;
+    background: #F6D55C;
+
+
+
+}
+.about h3, p{
     text-align: center;
+    
 }
 .about p{
     color: white;
+
 }
 #content{
-    background-color: #292929;
+    background-color:#292929 ;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-    flex-wrap: wrap-reverse;
-
+    flex-wrap: wrap;
+    padding: 40px;
 }
-.quotelist{
+
+#quote{
+    border: 5px solid white;
+    padding: 40px;
+    margin: 0em;
+    width: 70%;
     float: right;
-    width: 60%;
-    margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-
+    text-align: center;
+    background-image: url(../../assets/images/quotes-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    margin: 20px;  
+    border-radius: 25px;
+  
 }
 
-.quotelist h5{
-    font-weight: bold;
-    background-color: #F6D55C;
-    color: #292929;
-    padding: 20px;
-    border-radius: 25px;
-    display: flex;
-
+#form{
+    float: left;
+    width: 50%;
+    opacity: 0.8;
+    margin: 50px;  
 }
 
 i{
-    color: #F6D55C; 
+    color: #292929; 
     font-size: small;
     font-weight: bold;
  }
  span{
     font-weight: bolder;
-    color:#F6D55C ;
+    color:#292929 ;
 
  }
 
- #table{
-    padding: 40px;
- }
