@@ -1,11 +1,12 @@
 .form{
-    background-color: white;
-    color:#292929;
+    background-color:#292929;
+    color:white;
     width :auto;
     height: auto;
-    padding: 30px;
+    padding: 50px;
     text-align: center;
-    border-radius: round;
     font-weight: bold;
+    border-radius: 25px white;
+    
    
 }
