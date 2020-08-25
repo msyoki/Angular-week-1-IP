@@ -15,16 +15,20 @@
 }
 .about{
     background-color:#585858;
-    color: #F6D55C;
+    color: #292929;
     padding: 20px;
     text-align: center;
 
 
 }
 
-
-.about h5{
+.about h4{
     font-weight: bolder;
+    color: #F6D55C;
+    padding: 20px;
+    width: auto;
+    font-weight: bolder;
+
 
 }
 .about h5, p{
@@ -34,30 +38,26 @@
     color: white;
 }
 #content{
-    background-color: #292929;
+    background-image: url(//src/assets/janko-ferlic-h9Iq22JJlGk-unsplash.jpg);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
-    flex-wrap: wrap-reverse;
-    text-align: center;
-
-}
-.quotelist{
-    float: right;
-    width: 60%;
-    margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-
+    flex-wrap: wrap;
 }
 
-.quotelist h5{
-    font-weight: bold;
-    background-color: #F6D55C;
-    color: #292929;
+#quote{
+    border: 1px solid white;
     padding: 20px;
+    margin: 0em;
+    width: 70%;
+    float: right;
+    text-align: center;
+    background-color: #292929;
     border-radius: 25px;
-    display: flex;
+}
 
+#form{
+    float: left;
+    width: 50%;
 }
 
 i{
@@ -71,6 +71,3 @@ i{
 
  }
 
- #table{
-    padding: 40px;
- }
