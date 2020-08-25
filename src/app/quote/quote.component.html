@@ -2,27 +2,31 @@
     <h2 >InspireDock APP ®</h2>  
 </div>
 <div class=" about ">
+    <hr>
     <h4>ABOUT</h4>
-    <p>This is an application developed by Musyoki Mutua in testing first week of learning angular concept,the application allows the user to;create a new inspiration quotes,upvote or downvote the quote, view vote count on each quote,delete a quote & shows date when quote was generated.</p>
+    <hr>
+    <p>This is an Angular application developed by Musyoki Mutua in testing first week of learning angular concept,the application allows the user to;create a new inspiration quotes,upvote or downvote the quote, view vote count on each quote,delete a quote & shows date when quote was generated.</p>
+    <br>
+    <a href="#form" ><button type="button" class="btn btn-info">CREATE NEW QUOTE</button></a><br><br>
 </div>
 <!-------------->
 
 <div id="content" class="d-flex justify-content-center">
-    <div id="form">
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-
-    </div>
     
     <div *ngFor='let quote of quotes' id="quote">
-        
+        <h5><span>"{{quote.description}}"</span></h5>
         <hr>
-        <h4><span>Author<br>"{{quote.authorName}}"</span></h4>
+        <h6><span>Author: "{{quote.authorName}}"</span></h6>
         <h4><i>Editor: "{{quote.editorName}}"</i></h4>
-        <p>"{{quote.description}}"</p>
         <h6><i>Posted on {{quote.postDate|date|uppercase}}</i></h6>
         <h6><i>{{quote.postDate|dateCount}} Days old</i></h6>
         <app-likes></app-likes><br><br>
         <app-quote-details (isComplete) = 'completeQuote($event,i)'></app-quote-details>
+    </div>
+
+    <div id="form">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+
     </div>
 </div>
 

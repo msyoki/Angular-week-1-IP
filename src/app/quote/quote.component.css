@@ -12,6 +12,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 
+
 }
 .about{
     background-color:#585858;
@@ -21,53 +22,71 @@
 
 
 }
+.about {
+    color:#F6D55C;
+    font-weight: bolder;
 
+}
 .about h4{
     font-weight: bolder;
-    color: #F6D55C;
+    color: #292929;
     padding: 20px;
     width: auto;
     font-weight: bolder;
+    border-radius: 25px;
+    background: #F6D55C;
+
 
 
 }
-.about h5, p{
+.about h3, p{
     text-align: center;
+    
 }
 .about p{
     color: white;
+
 }
 #content{
-    background-image: url(//src/assets/janko-ferlic-h9Iq22JJlGk-unsplash.jpg);
+    background-color:#292929 ;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
+    padding: 40px;
 }
 
 #quote{
-    border: 1px solid white;
-    padding: 20px;
+    border: 5px solid white;
+    padding: 40px;
     margin: 0em;
     width: 70%;
     float: right;
     text-align: center;
-    background-color: #292929;
+    background-image: url(../../assets/images/quotes-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    margin: 20px;  
     border-radius: 25px;
+  
 }
 
 #form{
     float: left;
     width: 50%;
+    opacity: 0.8;
+    margin: 50px;  
 }
 
 i{
-    color: #F6D55C; 
+    color: #292929; 
     font-size: small;
     font-weight: bold;
  }
  span{
     font-weight: bolder;
-    color:#F6D55C ;
+    color:#292929 ;
 
  }
 
