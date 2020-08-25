@@ -5,36 +5,37 @@
 
 
 
-#header, #footer{
-    background-color: #F6D55C;
-    color:  #292929;
+#header{
+    background-color:#F6D55C;
+    color: #292929;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+#footer{
+    background-color:#292929;
+    color:  white;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-
-
+    font-weight: bolder;
 }
 .about{
-    background-color:#585858;
-    color: #292929;
+    background-color:#292929;
+    color: white;
     padding: 20px;
     text-align: center;
-
-
-}
-.about {
-    color:#F6D55C;
     font-weight: bolder;
+    opacity: 0.9;
+
 
 }
+
 .about h4{
     font-weight: bolder;
-    color: #292929;
     padding: 20px;
     width: auto;
-    font-weight: bolder;
-    border-radius: 25px;
-    background: #F6D55C;
+    color: #F6D55C;
 
 
 
@@ -43,16 +44,16 @@
     text-align: center;
     
 }
-.about p{
-    color: white;
 
-}
+
+
 #content{
-    background-color:#292929 ;
-    color: white;
+    background-color:white;
+    color: #292929 ;
     font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 10px;
+    font-weight: bolder;
 }
 
 #quote{
@@ -66,15 +67,14 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.9;
-    margin: 20px;  
-    border-radius: 25px;
+    margin: 10px;  
+    border-radius: 25px white;
   
 }
 
 #form{
     float: left;
-    width: 50%;
+    width: 60%;
     opacity: 0.8;
     margin: 50px;  
 }
